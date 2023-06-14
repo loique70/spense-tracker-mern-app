@@ -12,7 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/', express.static(path.join(__dirname, '/public')))
-app.use('/', require('./src/routes/root.js'))
+app.use('/', require('./src/routes/root'))
 app.use('/categories', require('./src/routes/categoriesRoute'))
 app.use('/transaction', require('./src/routes/transactionRoute'))
 app.use('/label', require('./src/routes/labelRoute'))
